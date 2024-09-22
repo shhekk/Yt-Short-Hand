@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Timeline Control",
+  "version": "1.0",
+  "description": "Control YouTube video timeline with keyboard shortcuts.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "../icon.png",
+    "32": "../icon.png",
+    "48": "../icon.png",
+    "128": "../icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "../icon.png",
+      "32": "../icon.png",
+      "48": "../icon.png",
+      "128": "../icon.png"
+    },
+    "default_popup": "index.html"
+  }
+}
